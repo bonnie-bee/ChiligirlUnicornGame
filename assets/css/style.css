@@ -28,24 +28,38 @@ button{
 }
 
 .answer{
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
 }
 
 #ans1{
     background-color: aqua;
+    margin-left: 7%;
+    margin-top: 4%;
+    
 }
 
 #ans2{
     background-color: rgb(174, 0, 255);
+    margin-left: 6%;
+    margin-top: 4%;
+    
 }
 
 #ans3{
     background-color: orange;
+    margin-left: 7%;
+    margin-top: 2%;
+    
 }
 
 #ans4{
     background-color: rgb(0, 255, 55);
+    margin-left: 6%;
+    margin-top: 2%;
+    
 }
 
 #ans5{
@@ -94,4 +108,60 @@ button{
 
 #ans16{
     background-color: rgb(58, 194, 31);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .answer{
+        width: 300px;
+        height: 225px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #ans1{
+        background-color: aqua;
+        margin-left: 6%;
+        margin-top: 4%;
+        
+    }
+    
+    #ans2{
+        background-color: rgb(174, 0, 255);
+        margin-left: 3%;
+        margin-top: 4%;
+        
+    }
+    
+    #ans3{
+        background-color: orange;
+        margin-left: 3%;
+        margin-top: 4%;
+        
+    }
+    
+    #ans4{
+        background-color: rgb(0, 255, 55);
+        margin-left: 3%;
+        margin-top: 4%;
+        
+    }
 }

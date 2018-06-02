@@ -1,5 +1,6 @@
-//Variable to hold answer values
-var total = 0;
+//Variable to hold answer and time values
+let total = 0;
+let timeLeft = 5;
 
 
 //Populate document on load
@@ -66,12 +67,90 @@ $("button").on("click", function(){
 
 });
 
+
+
+//Function to run the timer
+
+function timer1(){
+    
+    const thisInt = setInterval(function() {
+        if (timeLeft > 0){
+            timeLeft--;
+            $('#countdown').html(timeLeft)
+        } else {
+            clearInterval(thisInt);
+            secondQuestion();
+            timeLeft = 5;
+        }}, 1000)
+}
+
+function timer2(){
+    
+    const thisInt = setInterval(function() {
+        if (timeLeft > 0){
+            timeLeft--;
+            $('#countdown').html(timeLeft)
+        } else {
+            clearInterval(thisInt);
+            thirdQuestion();
+            timeLeft = 5;
+        }}, 1000)
+}
+
+function timer3(){
+    
+    const thisInt = setInterval(function() {
+        if (timeLeft > 0){
+            timeLeft--;
+            $('#countdown').html(timeLeft)
+        } else {
+            clearInterval(thisInt);
+            fourthQuestion();
+            timeLeft = 5;
+        }}, 1000)
+}
+
+function timer4(){
+    
+    const thisInt = setInterval(function() {
+        if (timeLeft > 0){
+            timeLeft--;
+            $('#countdown').html(timeLeft)
+        } else {
+            clearInterval(thisInt);
+            fifthQuestion();
+            timeLeft = 5;
+        }}, 1000)
+}
+
+function timer5(){
+    
+    const thisInt = setInterval(function() {
+        if (timeLeft > 0){
+            timeLeft--;
+            $('#countdown').html(timeLeft)
+        } else {
+            clearInterval(thisInt);
+            whoAreYou();
+            timeLeft = 5;
+        }}, 1000)
+}
+
+
+
+
+
+
+
 //Question one function - question and answers
 
 function firstQuestion(){
 //Replace starting html and show question 1
-    $(".game").html(`<div class="timer">Time Remaining: </div> <h1>Where would you rather live?</h1>`);
 
+  
+
+$(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <h1>Where would you rather live?</h1>`);
+//timer1(); 
 
 //Create answers with different values
     let answer1 = new Answers(1, 'ans1');
@@ -95,8 +174,8 @@ function firstQuestion(){
 //Second question function - question, answers
 function secondQuestion(){
 //I seem to have coded myself into a corner - Make a new question 2
-    $(".game").html(`<div class="timer">Time Remaining: </div> <h1>Beans in chili?</h1>`)
-
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <h1>Beans in chili?</h1>`)
+    timer2()
 
 //Put in answers with different values
     let answer5 = new Answers(1, 'ans5');
@@ -116,8 +195,8 @@ function secondQuestion(){
 //Third question function - question, answers
 function thirdQuestion(){
 //Still in it - Make a new question 3
-    $(".game").html(`<div class="timer">Time Remaining: </div> <h1>What kind of chili do you want?</h1>`)
-
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>What kind of chili do you want?</h1>`)
+    timer3();
 
 //Put in answers with different values
     let answer7 = new Answers(1, 'ans7');
@@ -138,8 +217,8 @@ function thirdQuestion(){
 //Fourth question function - question, answers
 function fourthQuestion(){
 //Still in it - Make a new question 4
-    $(".game").html(`<div class="timer">Time Remaining: </div> <h1>What position do you hold on your chili team?</h1>`)
-
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>What position do you hold on your chili team?</h1>`)
+    timer4();
 
 //Put in answers with different values
     let answer10 = new Answers(1, 'ans10');
@@ -161,8 +240,8 @@ function fourthQuestion(){
 //Fifth question function - question, answers
 function fifthQuestion(){
 //Last one - Make a new question 5
-    $(".game").html(`<div class="timer">Time Remaining: </div> <h1>Who's your best friend?</h1>`)
-
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>Who's your best friend?</h1>`)
+    timer5();
 
 //Put in answers with different values
     let answer15 = new Answers(2, 'ans15');

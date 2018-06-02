@@ -6,7 +6,7 @@ let timeLeft = 5;
 //Populate document on load
 $(document).ready(function() {
     $('.game').html(`<h1 class="here" id="yeah">Are you a</h1>
-    + <h2>Chiligirl <span>or a</span> Unicorn</h2>`)
+    <h2>Chiligirl <span>or a</span> Unicorn</h2>`)
 });
 
 
@@ -24,7 +24,7 @@ class Answers{
 function reset(){
     $('.game').html('<h1 class="here" id="yeah">Are you a</h1>'
        + '<h2>Chiligirl <span>or a</span> Unicorn</h2>');
-    $('button').css('visibility', 'visible');
+    $('.start').css('visibility', 'visible');
     total: 0;
 };
 
@@ -61,15 +61,15 @@ function whoAreYou(){
 }
 
 //Press start button to start game
-$("button").on("click", function(){
-    $('button').css('visibility', 'hidden');
+$(".start").on("click", function(){
+    $('.start').css('visibility', 'hidden');
     firstQuestion();
 
 });
 
 
 
-//Function to run the timer
+//Function to run the timers
 
 function timer1(){
     
@@ -149,7 +149,7 @@ function firstQuestion(){
 
   
 
-$(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <h1>Where would you rather live?</h1>`);
+$(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <p class="question">Where would you rather live?</p>`);
 //timer1(); 
 
 //Create answers with different values
@@ -174,12 +174,14 @@ $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> 
 //Second question function - question, answers
 function secondQuestion(){
 //I seem to have coded myself into a corner - Make a new question 2
-    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <h1>Beans in chili?</h1>`)
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <p class="question">Do you like beans in chili?</p>`)
     //timer2()
 
 //Put in answers with different values
     let answer5 = new Answers(1, 'ans5');
     let answer6 = new Answers(-1, 'ans6');
+
+    $(answer5).html('<p>Hey</p>');
         
         
 //When clicked, add the answer values to the total, log the total to make sure it's working  
@@ -195,7 +197,7 @@ function secondQuestion(){
 //Third question function - question, answers
 function thirdQuestion(){
 //Still in it - Make a new question 3
-    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>Which chili do you want?</h1>`)
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <p class="question">Which chili do you want?</p>`)
     //timer3();
 
 //Put in answers with different values
@@ -217,7 +219,7 @@ function thirdQuestion(){
 //Fourth question function - question, answers
 function fourthQuestion(){
 //Still in it - Make a new question 4
-    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>What position do you hold on your chili team?</h1>`)
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <p class="question">What position do you hold on your chili team?</p>`)
     //timer4();
 
 //Put in answers with different values
@@ -240,7 +242,7 @@ function fourthQuestion(){
 //Fifth question function - question, answers
 function fifthQuestion(){
 //Last one - Make a new question 5
-    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>Who's your best friend?</h1>`)
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <p class="question">Who's your best friend?</p>`)
     //timer5();
 
 //Put in answers with different values

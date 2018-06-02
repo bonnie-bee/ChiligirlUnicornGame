@@ -1,20 +1,40 @@
+body{
+    background: url(../images/desertRainbow1.jpg);
+    background-repeat: no-repeat;
+    background-color:#e58255; 
+    
+
+}
+/*#fbbfbf*/
+
 .game{
     position: relative;
-    border: thick black solid;
+    
 }
+
+img{
+    margin-left: 40%;
+}
+
+
 h1{
-    font-size: 100px;
+    font-size: 7em;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    font-family: 'Smokum', cursive;
 }
 
 h2{
-    font-size: 80px;
+    font-size: 8em;
     text-align: center;
+    margin-top: 5%;
+    font-family: 'Smokum', cursive;
 }
 
 span{
-    font-size: 60px;
+    font-size: 1em;
+    margin-top: 3%;
+    font-family: 'Smokum', cursive;
 }
 
 button{
@@ -23,7 +43,14 @@ button{
 }
 
 .timer{
+    font-family: 'Smokum', cursive;
     font-size: 50px;
+    text-align: center;
+}
+
+.question{
+    font-size: 6em;
+    font-family: 'Sanchez', serif;
     text-align: center;
 }
 
@@ -32,7 +59,9 @@ button{
     height: 300px;
     display: inline-block;
     text-align: center;
+    border: ridge gold thick;
 }
+
 
 
 
@@ -65,13 +94,13 @@ button{
 
 /*Question 2 answers*/
 #ans5{
-    background-image: url(../images/neverBeans.jpg);
+    background-color: turquoise;
     margin-left: 8%;
     margin-top: 4%; 
 }
 
 #ans6{
-    background-image: url(../images/nayBeans.jpg);
+    background-color: turquoise;
     margin-left: 6%;
     margin-top: 4%; 
 }
@@ -152,6 +181,26 @@ button{
 
 
 
+/*Font list
+font-family: 'Roboto Slab', serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Sanchez', serif;  ----------------POS
+font-family: 'Kameron', serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Graduate', cursive;
+font-family: 'Vast Shadow', cursive;
+font-family: 'Rye', cursive;
+font-family: 'BioRhyme Expanded', serif;
+font-family: 'Sancreek', cursive;
+font-family: 'Diplomata', cursive;
+font-family: 'Arbutus', cursive;
+font-family: 'Smokum', cursive;  ---------------POS*/
+
+
+
+
 
 
 
@@ -165,6 +214,34 @@ button{
 
 
 @media screen and (min-width: 1440px) {
+    body{
+        background-image: url(../images/desertRainbow2.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    h1{
+        font-size: 8em;
+        text-align: center;
+        margin-top: 10%;
+        font-family: 'Smokum', cursive;
+    }
+    
+    h2{
+        font-size: 12em;
+        text-align: center;
+        margin-top: 5%;
+        font-family: 'Smokum', cursive;
+    }
+    
+    span{
+        font-size: 1em;
+        margin-top: 3%;
+        font-family: 'Smokum', cursive;
+    }
+
+    img{
+        margin-left: 45%;
+    }
 /*Question 1 answers*/
     .answer{
         width: 300px;

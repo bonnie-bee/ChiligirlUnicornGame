@@ -153,9 +153,9 @@ $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> 
 //timer1(); 
 
 //Create answers with different values
-    let answer1 = new Answers(1, 'ans1');
+    let answer1 = new Answers(-1, 'ans1');
     let answer2 = new Answers(2, 'ans2');
-    let answer3 = new Answers(-1, 'ans3');
+    let answer3 = new Answers(1, 'ans3');
     let answer4 = new Answers(-2, 'ans4');
     
 
@@ -195,13 +195,13 @@ function secondQuestion(){
 //Third question function - question, answers
 function thirdQuestion(){
 //Still in it - Make a new question 3
-    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>What kind of chili do you want?</h1>`)
+    $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>Which chili do you want?</h1>`)
     //timer3();
 
 //Put in answers with different values
-    let answer7 = new Answers(1, 'ans7');
+    let answer7 = new Answers(-1, 'ans7');
     let answer8 = new Answers(0, 'ans8');
-    let answer9 = new Answers(-1, 'ans9');
+    let answer9 = new Answers(1, 'ans9');
         
         
 //When clicked, add the answer values to the total, log the total to make sure it's working  
@@ -221,11 +221,11 @@ function fourthQuestion(){
     //timer4();
 
 //Put in answers with different values
-    let answer10 = new Answers(1, 'ans10');
-    let answer11 = new Answers(0, 'ans11');
-    let answer12 = new Answers(-1, 'ans12');
+    let answer10 = new Answers(2, 'ans10');
+    let answer11 = new Answers(1, 'ans11');
+    let answer12 = new Answers(-0, 'ans12');
     let answer13 = new Answers(-1, 'ans13');
-    let answer14 = new Answers(-1, 'ans14');
+    let answer14 = new Answers(-2, 'ans14');
         
         
 //When clicked, add the answer values to the total, log the total to make sure it's working  
@@ -244,8 +244,8 @@ function fifthQuestion(){
     //timer5();
 
 //Put in answers with different values
-    let answer15 = new Answers(2, 'ans15');
-    let answer16 = new Answers(-2, 'ans16');
+    let answer15 = new Answers(-2, 'ans15');
+    let answer16 = new Answers(2, 'ans16');
         
         
 //When clicked, add the answer values to the total, log the total to make sure it's working  

@@ -175,7 +175,7 @@ $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> 
 function secondQuestion(){
 //I seem to have coded myself into a corner - Make a new question 2
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span> </div> <h1>Beans in chili?</h1>`)
-    timer2()
+    //timer2()
 
 //Put in answers with different values
     let answer5 = new Answers(1, 'ans5');
@@ -196,7 +196,7 @@ function secondQuestion(){
 function thirdQuestion(){
 //Still in it - Make a new question 3
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>What kind of chili do you want?</h1>`)
-    timer3();
+    //timer3();
 
 //Put in answers with different values
     let answer7 = new Answers(1, 'ans7');
@@ -218,7 +218,7 @@ function thirdQuestion(){
 function fourthQuestion(){
 //Still in it - Make a new question 4
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>What position do you hold on your chili team?</h1>`)
-    timer4();
+    //timer4();
 
 //Put in answers with different values
     let answer10 = new Answers(1, 'ans10');
@@ -241,7 +241,7 @@ function fourthQuestion(){
 function fifthQuestion(){
 //Last one - Make a new question 5
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>5</span>  </div> <h1>Who's your best friend?</h1>`)
-    timer5();
+    //timer5();
 
 //Put in answers with different values
     let answer15 = new Answers(2, 'ans15');

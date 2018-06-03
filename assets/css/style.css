@@ -94,13 +94,13 @@ button{
 
 /*Question 2 answers*/
 #ans5{
-    background-color: turquoise;
+    background-image: url(../images/neverBeans.jpg);
     margin-left: 8%;
     margin-top: 4%; 
 }
 
 #ans6{
-    background-color: turquoise;
+    background-image: url(../images/nayBeans.jpg);
     margin-left: 6%;
     margin-top: 4%; 
 }

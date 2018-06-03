@@ -11,7 +11,7 @@ $(document).ready(function () {
 });
 
 
-//prototype to simply making objects with values for answers - also makes them into divs!
+//prototype to make objects with values for answers - also makes them into divs!
 class Answers {
     constructor(value, name) {
         this.value = value;
@@ -21,12 +21,12 @@ class Answers {
 };
 
 
-//set reset function
+//Function to reset the game at the end
 function reset() {
     $('.game').html('<h1 class="here" id="yeah">Are you a</h1>'
         + '<h2>Chiligirl <span>or a</span> Unicorn</h2>');
     $('.start').css('visibility', 'visible');
-    total: 0;
+    total= 0;
 };
 
 
@@ -116,7 +116,8 @@ function firstQuestion() {
 
 //Second question function - question, answers
 function secondQuestion() {
-    //I seem to have coded myself into a corner - Make a new question 2
+    
+    //Replace starting html and show question 2
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>20</span> </div> <p class="question">Do you like beans in chili?</p>`)
 
     //Put in answers with different values
@@ -154,7 +155,8 @@ function secondQuestion() {
 
 //Third question function - question, answers
 function thirdQuestion() {
-    //Still in it - Make a new question 3
+
+    //Replace starting html and show question 3
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>20</span>  </div> <p class="question">Which chili do you want?</p>`)
 
 
@@ -178,6 +180,8 @@ function thirdQuestion() {
         }
     }
     const thisInt = setInterval(timer3, 1000)
+
+
     //When clicked, add the answer values to the total, log the total to make sure it's working  
     $(".answer").on("click", function () {
         clearInterval(thisInt);
@@ -192,7 +196,7 @@ function thirdQuestion() {
 
 //Fourth question function - question, answers
 function fourthQuestion() {
-    //Still in it - Make a new question 4
+    //Replace starting html and show question 4
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>20</span>  </div> <p class="question">What position do you hold on your chili team?</p>`);
 
 
@@ -234,7 +238,7 @@ function fourthQuestion() {
 };
 //Fifth question function - question, answers
 function fifthQuestion() {
-    //Last one - Make a new question 5
+    //Replace starting html and show question 5
     $(".game").html(`<div class="timer">Time Remaining: <span id=countdown>20</span>  </div> <p class="question">Who's your best friend?</p>`)
 
     //Put in answers with different values

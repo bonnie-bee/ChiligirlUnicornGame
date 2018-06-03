@@ -52,6 +52,8 @@ button{
     font-size: 6em;
     font-family: 'Sanchez', serif;
     text-align: center;
+    margin-top: 6%;
+    margin-bottom: 4%
 }
 
 .answer{
@@ -62,7 +64,10 @@ button{
     border: ridge gold thick;
 }
 
-
+.results{
+    font-size: 10em;
+    text-align: center;
+}
 
 
 /*Question 1 answers*/

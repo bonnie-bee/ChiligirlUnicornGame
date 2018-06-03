@@ -32,20 +32,20 @@ function reset() {
 
 //Set 'You're a chiligirl" function
 function chiligirl() {
-    $('.game').html("<h1>You're a chiligirl! Hopefully tomorrow I remember to set this to an image screen with the html image tag here instead of this phrase</h1>");
+    $('.game').html("<h1 class='results'>You're a chiligirl!</h1>");
     setTimeout(reset, 5000);
 };
 
 
 //set "You're a unicorn" function
 function unicorn() {
-    $('.game').html("<h1>You're a unicorn! Hopefully tomorrow I remember to set this to an image screen with the html image tag here instead of this phrase</h1>");
+    $('.game').html("<h1 class='results'>You're a unicorn!</h1>");
     setTimeout(reset, 5000);
 };
 
 //set "You're a chilicorn" function
 function chilicorn() {
-    $('.game').html("<h1>Gadzooks! You're the elusive chilicorn! Hopefully tomorrow I remember to set this to an image screen with the html image tags here instead of this phrase</h1>");
+    $('.game').html("<h1 class = 'results'>Gadzooks! You're the elusive chilicorn!</h1>");
     setTimeout(reset, 5000);
 };
 
